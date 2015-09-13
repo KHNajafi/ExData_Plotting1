@@ -40,6 +40,6 @@ with(data, {plot(Date, Sub_metering_1, ylab = "Energy sub metering", xlab = "", 
             lines(Date, Sub_metering_3, col ="blue")
             legend("topright", pch = "_", col = c("black", "red", "blue"), legend = c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), bty = "n")
 })
-with(data, plot(Date, Global_reactive_power, type = "l", xlab = ""))
+with(data, plot(Date, Global_reactive_power, type = "l", xlab = "datetime"))
 dev.copy(png, file = "plot4.png") # copy plot to PNG
 dev.off()
