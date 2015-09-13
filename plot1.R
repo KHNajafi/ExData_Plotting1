@@ -3,7 +3,7 @@
 ## The following code fully creates Plot 1, Histogram of Global Active Power
 
 
-## Set working directory & Download dataset
+## Set working directory & Download dataset 
 rm(list=ls())
 if (!dir.exists("./A1")) {
         dir.create("./A1")
