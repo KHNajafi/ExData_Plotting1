@@ -20,7 +20,7 @@ if(length(setdiff(pkgs, rownames(installed.packages()))) > 0) {
         install.packages(setdiff(pkgs, rownames(installed.packages())))
 }
 library(dplyr)
-library(lubridate)
+library(lubridate) 
 
 ## Correct variable names
 colnames(data) <- c("Date", "Time", "Global_active_power", "Global_reactive_power", "Voltage", "Global_intensity", "Sub_metering_1", "Sub_metering_2", "Sub_metering_3")
