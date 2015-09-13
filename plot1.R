@@ -10,7 +10,7 @@ if (!dir.exists("./A1")) {
 }
 setwd(file.path("./A1"))
 
-temp <- tempfile()
+temp <- tempfile() 
 zipURL <- "https://d396qusza40orc.cloudfront.net/exdata%2Fdata%2Fhousehold_power_consumption.zip"
 download.file(zipURL, dest = temp, method = "curl")
 data <- read.table(unz(temp, "household_power_consumption.txt"), sep=";", header = T, na.strings = "?", skip=grep("31/1/2007;23:58:00", readLines("household_power_consumption.txt")), nrows = 2880, stringsAsFactors = F)
